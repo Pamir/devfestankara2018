@@ -1,4 +1,4 @@
-#### Spinnaker v1 Legacy Sytle Canary Deployment
+#### Spinnaker v1 Legacy Style Canary Deployment
 
 ```bash
 kubectl apply -f 01-deployment.yaml 
