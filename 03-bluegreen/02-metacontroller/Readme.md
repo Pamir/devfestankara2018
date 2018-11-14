@@ -1,7 +1,7 @@
 #### Metacontroller
 
-[Metacontroller Documentation](https://metacontroller.app/)
-[Mteacontroller Github](https://github.com/GoogleCloudPlatform/metacontroller)
+[Metacontroller Documentation](https://metacontroller.app/) </br>
+[Metacontroller Github](https://github.com/GoogleCloudPlatform/metacontroller)
 
 ##### Install Metacontroller
 ```bash
