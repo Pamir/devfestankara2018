@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-v3
+  labels:
+    app: myapp
+    version: v3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp
+      version: v3
+  template:
+    metadata:
+      labels:
+        app: myapp
+        version: v3
+    spec:
+      containers:
+      - image: docker.io/kennethreitz/httpbin
+        imagePullPolicy: IfNotPresent
+        name: httpbin
+        command: ["gunicorn", "--access-logfile", "-", "-b", "0.0.0.0:8080", "httpbin:app"]
+        ports:
+        - containerPort: 8080
+          name: http
