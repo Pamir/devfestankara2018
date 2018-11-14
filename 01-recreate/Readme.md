@@ -7,7 +7,7 @@ kubectl apply -f 02-deployment.yaml
 kubectl get pods -w
 kubectl get pods -w
 kubectl get pods -w
-```bash
+```
 
 #### cleanup
 ```bash
