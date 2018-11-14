@@ -22,3 +22,7 @@ kubectl exec -it nettools -- /bin/sh
 while true; do curl --connect-timeout 1 -m 1 http://my-app; done
 kubectl apply -f app-v2.yaml
 ```
+#### cleanup
+```bash
+kubectl delete -f app-v2.yaml
+```
