@@ -10,10 +10,10 @@ kubectl apply -f install/kubernetes/istio-demo.yaml
 ```bash
 kubectl create ns app
 kubectl label namespace app  istio-injection=enabled
-kubectl apply -f 01-deployment.yaml
-kubectl apply -f 02-deployment.yaml
+kubectl apply -f 01-deployment.yaml -n app
+kubectl apply -f 02-deployment.yaml -n app
 kubectl exec -it nettools -- /bin/sh
-while true; do curl --connect-timeout 1 -m 1 http://my-app.app; done
+while true; do curl --connect-timeout 1 -m 1 http://myapp.app; done
 ```
 
 Istio integration
